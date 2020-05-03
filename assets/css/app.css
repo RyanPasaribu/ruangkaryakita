@@ -1,0 +1,102 @@
+a:hover {
+	text-decoration: none;
+}
+
+i.loading-animation {
+	animation: loading 1.5s infinite linear;
+}
+
+@keyframes loading {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+div.clearfix {
+	clear: both;
+}
+
+div.overlay-screen {
+	background-color: white;
+	height: 100vh;
+	position: fixed;
+	width: 100%;
+	z-index: 11;
+}
+
+img.img-loading {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 120px;
+	z-index: 12;
+}
+/* 
+body {
+	background-color: #eeeeee;
+} */
+
+nav.navbar {
+	background-color: white;
+	border-bottom: 1px solid #ddd;
+}
+
+nav a.navbar-brand {
+	padding-top: 0;
+}
+
+nav a.navbar-brand img {
+	width: 120px;
+}
+
+nav div.collapse ul li {
+	font-family: "Open Sans";
+}
+
+div.navtop {
+	height: 55px;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+	border-color: rgba(0, 0, 0, 0.4);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.2);
+	outline: 0 none;
+}
+
+footer {
+	background-color: white;
+	border-top: 1px solid #ddd;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 50px;
+	position: relative;
+	width: 100%;
+}
+
+footer p {
+	color: #333333;
+	font-size: 15px;
+	margin: auto;
+	padding: 15px 0;
+	position: relative;
+}

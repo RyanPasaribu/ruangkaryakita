@@ -1,0 +1,145 @@
+div.banner {
+	background-repeat: repeat-x;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	height: 250px;
+	justify-content: center;
+	width: 100%;
+}
+
+div.banner h2 {
+	color: white;
+	line-height: 45px;
+	text-shadow: 1px 7px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 700px) {
+	div.banner {
+		height: 200px;
+	}
+
+	div.banner h2 {
+		font-size: 21px;
+		line-height: 30px;
+	}
+}
+
+div.wrapper {
+	height: auto;
+	margin: auto;
+	margin-top: 40px;
+	width: 1100px;
+}
+
+div.wrapper h2.title {
+	font-family: "Nunito";
+	font-size: 20px;
+	padding: 0 10px;
+}
+
+div.wrapper div.main {
+	height: auto;
+	margin-top: 15px;
+	width: 100%;
+}
+
+div.wrapper div.main div.item {
+	cursor: pointer;
+	height: 240px;
+	float: left;
+	margin: 0 10px;
+	margin-bottom: 20px;
+	position: relative;
+	transition: 0.2s;
+	width: 255px;
+}
+
+div.wrapper div.main div.item div.thumb img {
+	border-radius: 4px;
+	height: 160px;
+	object-fit: cover;
+	overflow: hidden;
+	position: relative;
+	transition: 0.2s;
+	width: 100%;
+}
+
+div.wrapper div.main div.item iframe {
+	height: 160px;
+	object-fit: cover;
+	position: relative;
+	width: 100%;
+}
+
+div.wrapper div.main div.item div.text {
+	margin-top: 10px;
+}
+
+div.wrapper div.main div.item:hover div.text h3.name {
+	color: darkblue;
+}
+
+div.wrapper div.main div.item:hover div.thumb img {
+	filter: brightness(0.8);
+}
+
+div.wrapper div.main div.item div.text h3.name {
+	color: #333333;
+	font-size: 14px;
+	margin: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2; /* number of lines to show */
+	-webkit-box-orient: vertical;
+}
+
+div.wrapper div.main div.item div.text span.category {
+	background-color: royalblue;
+	border-radius: 3px;
+	color: white;
+	font-size: "Open Sans";
+	font-size: 11px;
+	padding: 2px 7px;
+	transition: 0.2s;
+}
+
+div.wrapper div.main div.item div.text span.category:hover {
+	background-color: rgb(8, 49, 173);
+}
+
+@media screen and (max-width: 1150px) {
+	div.wrapper {
+		width: 800px;
+	}
+
+	div.wrapper div.main div.item {
+		width: 246px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	div.wrapper {
+		margin-top: 30px;
+		width: 550px;
+	}
+
+	div.wrapper div.main div.item {
+		width: 255px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	div.wrapper {
+		width: 90%;
+	}
+
+	div.wrapper div.main div.item {
+		display: block;
+		height: auto;
+		margin: 0;
+		margin-bottom: 15px;
+		width: 100%;
+	}
+}
